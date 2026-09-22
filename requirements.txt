@@ -1,0 +1,46 @@
+
+fastapi[standard]
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12       # required for UploadFile / File(...)
+
+# ── Config & environment ──────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Database (SQLAlchemy + PostgreSQL) ────────────────────────
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0         # postgres driver; swap for asyncpg when you go async
+sqlmodel>=0.0.18               # used for UUID type in models.py
+
+# ── Auth ──────────────────────────────────────────────────────
+python-jose[cryptography]>=3.3.0
+argon2-cffi>=23.1.0            # Argon2 password hashing
+
+# ── Validation ────────────────────────────────────────────────
+pydantic[email]>=2.0.0
+email-validator>=2.0.0
+
+# ── LangChain core stack ──────────────────────────────────────
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-text-splitters>=0.3.0
+
+# ── LangChain integrations ────────────────────────────────────
+langchain-google-genai>=2.0.0  # GoogleGenerativeAIEmbeddings + Gemini LLM
+langchain-qdrant>=0.2.0        # QdrantVectorStore, RetrievalMode, FastEmbedSparse
+langchain-cohere>=0.3.0        # CohereRerank
+langchain-huggingface
+
+# ── Vector database ───────────────────────────────────────────
+qdrant-client>=1.9.0
+fastembed>=0.3.0               # BM25 sparse embeddings (Qdrant/bm25 model)
+huggingface-hub
+
+# ── PDF parsing ───────────────────────────────────────────────
+llama-parse>=0.5.0             # LlamaParse cloud API for high-quality PDF ingestion
+llama-cloud>=2.15.0
+llama-index>=0.14.24
+
+# ── Utilities ─────────────────────────────────────────────────
+loguru>=0.7.0                  # structured logging (replace bare print() calls)
+sentence_transformers
+psutil

@@ -215,4 +215,33 @@ marimo/_lsp/
 __marimo__/
 
 # Streamlit
-.streamlit/secrets.toml
+# .streamlit/secrets.toml
+
+# Project specific gitignore
+.env
+__pycache__/
+*.pyc
+document_files/
+assets/*.png
+assets/*.jpg
+assets/*
+.vscode/
+data_preprocessing/work.py
+data_preprocessing/work
+qdrant_storage/
+.venv/
+/.venv/
+output.json
+output1.json
+document_files
+data/
+
+document_files/
+uploads/
+/qdrant_storage
+./qdrant_storage
+app.log
+evaluation/Documents/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
