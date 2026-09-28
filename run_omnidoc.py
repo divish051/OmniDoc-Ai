@@ -12,8 +12,8 @@ def main():
     app_path = root / "omnidoc" / "app.py"
     
     print("=" * 60)
-    print("🚀 Launching OmniDoc AI - Multimodal Document QA")
-    print("   Visual Source Attribution • Zero-Hallucination Guardrails")
+    print("Launching OmniDoc AI - Multimodal Document QA")
+    print("   Visual Source Attribution * Zero-Hallucination Guardrails")
     print("=" * 60)
     
     cmd = [
