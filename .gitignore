@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Custom project ignores
+.env
+__pycache__/
+*.pyc
+document_files/
+assets/*.png
+assets/*.jpg
+assets/*
+.vscode/
+data_preprocessing/work.py
+data_preprocessing/work
+qdrant_storage/
+.venv/
+/.venv/
+output.json
+output1.json
+document_files
+data/
+uploads/
+/qdrant_storage
+./qdrant_storage
+app.log
+evaluation/Documents/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
